@@ -14,6 +14,10 @@ namespace Presentacion
         [STAThread]
         static void Main()
         {
+
+            //SOLO ES UNA PRUEBA 
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
