@@ -17,6 +17,7 @@ namespace Presentacion
 
             //SOLO ES UNA PRUEBA 
             // ESTA PRUEBA VA DESDE GITHUB HASTA MI PC
+            // Ira desde mi PC hasya git Prueba
 
 
             Application.EnableVisualStyles();
