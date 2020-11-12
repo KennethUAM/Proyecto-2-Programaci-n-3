@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F31E364-1979-4887-996B-15D98912452F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador\ConfiguracionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ConfiguracionCliente.Designer.cs">
+      <DependentUpon>ConfiguracionCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\crearCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\crearCliente.Designer.cs">
+      <DependentUpon>crearCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\FormAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\FormAdministrador.Designer.cs">
+      <DependentUpon>FormAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\AbrirCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\AbrirCuenta.Designer.cs">
+      <DependentUpon>AbrirCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\Mis Prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Mis Prestamos.Designer.cs">
+      <DependentUpon>Mis Prestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\Activo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\Activo.Designer.cs">
+      <DependentUpon>Activo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\Atrasado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\Atrasado.Designer.cs">
+      <DependentUpon>Atrasado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\Cobro Judicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\Cobro Judicial.Designer.cs">
+      <DependentUpon>Cobro Judicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\ConfiguracionEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\ConfiguracionEmpleado.Designer.cs">
+      <DependentUpon>ConfiguracionEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\Editar Prestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\Editar Prestamo.Designer.cs">
+      <DependentUpon>Editar Prestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\Finalizado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\Finalizado.Designer.cs">
+      <DependentUpon>Finalizado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\FormEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\FormEmpleado.Designer.cs">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\Global Prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\Global Prestamos.Designer.cs">
+      <DependentUpon>Global Prestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\Modulo Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\Modulo Empleado.Designer.cs">
+      <DependentUpon>Modulo Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administrador\ConfiguracionCliente.resx">
+      <DependentUpon>ConfiguracionCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\crearCliente.resx">
+      <DependentUpon>crearCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\FormAdministrador.resx">
+      <DependentUpon>FormAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\AbrirCuenta.resx">
+      <DependentUpon>AbrirCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\Mis Prestamos.resx">
+      <DependentUpon>Mis Prestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\Activo.resx">
+      <DependentUpon>Activo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\Atrasado.resx">
+      <DependentUpon>Atrasado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\Cobro Judicial.resx">
+      <DependentUpon>Cobro Judicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\ConfiguracionEmpleado.resx">
+      <DependentUpon>ConfiguracionEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\Finalizado.resx">
+      <DependentUpon>Finalizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\FormEmpleado.resx">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\Global Prestamos.resx">
+      <DependentUpon>Global Prestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\Modulo Empleado.resx">
+      <DependentUpon>Modulo Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{3dc59b86-d331-4d3d-a2ed-6f65212318e8}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{f9073720-fb63-4e95-acb2-e5bd088a6156}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
