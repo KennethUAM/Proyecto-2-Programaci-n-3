@@ -25,6 +25,14 @@ namespace Entidades
         }
 
 
+        public void metodoMuerto() 
+        {
+        
+        //prueba
+        
+        }
+
+
 
     }
 }
