@@ -25,12 +25,7 @@ namespace Entidades
         }
 
 
-        public void metodoMuerto() 
-        {
-        
-        //prueba
-        
-        }
+ //Se elimino recurso que no servía 
 
 
 
